@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+#yoxOl{
+    display: none;
+}
+nav,aside{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border: 1px solid #e5e8ec;
+    align-items: baseline;
+}
+
+#start a{
+   
+    font-family: 'Rubik Regular';
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000;
+    &:hover{
+        text-decoration: underline;
+    }
+    &:first-child{
+        margin-right: 20px;
+    }
+}
+#kamp{
+    font-family: 'Rubik Regular';
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #3c1e6d;
+    border-radius: 6px;
+    padding: 5px 12px;
+    &:hover{
+        background-color: #3c1e6d;
+        color: #fff;
+    }
+}
+#logo img{
+    width: 180px;
+    height: 30px;
+}
+
+aside{
+    border-top: none;
+    position: sticky;  /*??*/
+}
+#bar{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+#ayaq img{
+    width: 25px;
+    height: 25px;
+    &:first-child{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 95vw;
+        margin: auto;
+    }
+    
+    #nomre img,#kab svg{
+        width: 22px;
+        height: 22px;
+    }
+    #angle{
+        width: 16px;
+        height: 16px;
+    }
+    #bayraq{
+        width: 24px;
+        height: 24px;
+    }
+    #yoxOl,#end{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    #kab{
+        display: flex;
+        align-items: center;
+    }
+    #kab p{
+        display: flex;
+        flex-direction: column;
+        color: #000;
+    }
+    #nomre{
+        display: flex;
+        flex-direction: row;
+        /* white-space: nowrap;  запрещает перенос текста */
+        align-items: center;      /*icon niye ortalanmadi?*/
+        align-items: baseline;   /*baseline neye uygun olaraq?*/
+    }
+    
+    #nomre a{
+        display: inline-block;
+        color: #000;
+       
+    }
+    #span1{
+        color: #c1c1c1;
+        font-size: .7rem;
+    }
+    #span2{
+        font-size: 0.9rem;
+    }
+    #yoxOl{
+        font-family: 'Rubik Regular';
+        font-weight: 600;
+        
+    }
+    #kab svg{
+        width: 22px;
+        height: 22px;
+    }
+    .mleft{
+        padding: 10px 0;
+        padding-left: 15px;
+        border-left: 1px solid #e5e8ec;
+        margin-left: 20px;
+    }
+    .mLeft{
+        margin-left: 10px;
+    }
+    #dil{
+        align-items: center; /*niye islemedi?*/
+        
+    }
+    #end{
+        align-items: baseline;
+    }
+}
+@media only screen and (max-width: 860px){
+    .mleft{
+        padding-left: 5px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 815px){
+    .mleft{
+        padding-left: 2px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 385px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    #start{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;  
+    }
+    #start a:first-child{
+        margin-right: 0;
+    }
+    #ayaq{
+        display: none;
+    }
+    #bar{
+        width: 20px;
+    }
+    
+}
